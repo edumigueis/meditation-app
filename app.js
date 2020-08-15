@@ -31,6 +31,7 @@ let randomIndex = 0;
 let current = new Audio("");
 let currentVideo = null;
 let video = document.getElementById("stage-video");
+let config = document.getElementById("config-btn");
 
 playAudioBtn.addEventListener("click", function () {
   if (playAudioBtn.classList.contains("muted")) {
@@ -93,3 +94,7 @@ current.addEventListener("ended", function () {
   current.load();
   current.play();
 });
+
+config.addEventListener("click", function(){
+  document.getElementById("config-md").classList.toggle("open");
+})

@@ -214,3 +214,15 @@ ul li button{
   margin-bottom: 8px;
   cursor: pointer;
 }
+
+.modal-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+.modal-wrapper.open{
+  display: block !important;
+}
