@@ -22,6 +22,10 @@ let pairings = [
     audio: "./sounds/yoga.mp3",
     video: "./video/yoga.mp4",
   },
+  {
+    audio: "./sounds/moon.mp3",
+    video: "./video/moon.mp4",
+  },
 ];
 let randomIndex = 0;
 let current = new Audio("");

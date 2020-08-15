@@ -181,9 +181,12 @@ body {
 }
 
 .dropdown {
-  display: none;
+  opacity: 0;
   position: absolute;
   bottom: 50px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  transform: translateY(30px);
 }
 
 .dp-trigger {
@@ -191,7 +194,8 @@ body {
 }
 
 .dp-trigger:hover .dropdown {
-  display: block;
+  opacity: 1 !important;
+  transform: translateY(0px);
 }
 video.none{
   display: none !important;
@@ -201,4 +205,12 @@ video.none{
 }
 .fas.none{
   display: none !important;
+}
+
+ul li{
+  list-style: none;
+}
+ul li button{
+  margin-bottom: 8px;
+  cursor: pointer;
 }
