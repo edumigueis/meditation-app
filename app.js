@@ -18,6 +18,10 @@ let pairings = [
     audio: "./sounds/glitter.mp3",
     video: "./video/glitter.mp4",
   },
+  {
+    audio: "./sounds/yoga.mp3",
+    video: "./video/yoga.mp4",
+  },
 ];
 let randomIndex = 0;
 let current = new Audio("");
