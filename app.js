@@ -1,5 +1,15 @@
 const playAudioBtn = document.querySelector("#switch-audio");
 let audio = new Audio("./sounds/beach.mp3");
+let pairings = [
+  {
+    "audio": "./sounds/beach.mp3",
+    "video": "./video/beach.mp4"
+  },
+  {},
+  {},
+]
+let randomIndex = 0;
+let current = null;
 
 playAudioBtn.addEventListener("click", function () {
   if (playAudioBtn.classList.contains("muted")) {
@@ -9,7 +19,8 @@ playAudioBtn.addEventListener("click", function () {
     document.querySelectorAll(
       "#switch-audio .fa-volume-mute"
     )[0].style.display = "none";
-    audio.play();
+    current = new Audio(pairings[randomIndex].audio);
+    current.play();
   } else {
     playAudioBtn.classList.add("muted");
     var children = document.querySelectorAll("#switch-audio .fa-volume-mute");
@@ -18,6 +29,6 @@ playAudioBtn.addEventListener("click", function () {
     document.querySelectorAll(
       "#switch-audio .fa-volume-mute"
     )[0].style.display = "block";
-    audio.pause();
+    current.pause();
   }
 });
