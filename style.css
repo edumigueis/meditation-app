@@ -222,6 +222,9 @@ ul li button{
   width: 100%;
   height: 100vh;
   display: none;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  transition: 0.3s all ease-out;
 }
 .modal-wrapper.open{
   display: block !important;

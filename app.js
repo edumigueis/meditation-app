@@ -98,3 +98,7 @@ current.addEventListener("ended", function () {
 config.addEventListener("click", function(){
   document.getElementById("config-md").classList.toggle("open");
 })
+
+document.getElementById("config-md").addEventListener("click", function(){
+  document.getElementById("config-md").classList.toggle("open");
+})
