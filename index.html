@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Audio App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="wrapper">
+      <img
+        class="bg"
+        src="https://images.hdqwalls.com/download/sea-coast-horizon-calming-5m-3840x2160.jpg"
+        alt=""
+      />
       <div class="top-portion-wrapper">
         <div class="inner-main">
           <div class="animation">
@@ -26,18 +39,33 @@
         </div>
       </div>
       <div class="bottom-bar">
-        <button>
+        <button class="audio-btn">
           <i class="fas fa-volume-mute"></i>
           <i class="fas fa-volume-up"></i>
         </button>
-        <button>
-          <i class="fas fa-video"></i>
-        </button>
-        <button>
-          <i class="fas fa-ellipsis-h"></i>
-        </button>
-        
-        
+        <div class="dp-trigger">
+          <div class="dropdown">
+            <ul>
+              <li>Rain</li>
+              <li>Beach</li>
+            </ul>
+          </div>
+          <button>
+            <i class="fas fa-video"></i>
+          </button>
+        </div>
+
+        <div class="dp-trigger">
+          <div class="dropdown">
+            <ul>
+              <li>Rain</li>
+              <li>Beach</li>
+            </ul>
+          </div>
+          <button>
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
       </div>
     </div>
 

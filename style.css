@@ -3,8 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow: hidden;
+}
 .wrapper{
   height: 100vh;
+  overflow: hidden;
+}
+.wrapper .bg{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 .bottom-bar{
   height: 100px;
@@ -12,6 +22,25 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-bar button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .15);  
+ backdrop-filter: blur(5px);
+ border: none;
+ outline: none;
+ margin-right: 10px;
+}
+.audio-btn{
+  cursor: pointer;
+}
+.inner-main{
+  margin-top: 200px;
 }
 .animation{
   display: flex;
@@ -21,13 +50,12 @@
   height: 100%;
 }
 .watch-face {
-  height: 125px;
-  width: 125px;
+  height: 155px;
+  width: 155px;
 }
-
 .circle {
-  height: 125px;
-  width: 125px;
+  height: 155px;
+  width: 155px;
   border-radius: 50%;
   position: absolute;
   mix-blend-mode: screen;
@@ -71,7 +99,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-35px, -50px);
+    transform: translate(-45px, -60px);
   }
 }
 
@@ -80,7 +108,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(35px, 50px);
+    transform: translate(45px, 60px);
   }
 }
 
@@ -89,7 +117,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-60px, 0);
+    transform: translate(-70px, 0);
   }
 }
 
@@ -98,7 +126,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(60px, 0);
+    transform: translate(70px, 0);
   }
 }
 
@@ -107,7 +135,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-35px, 50px);
+    transform: translate(-45px, 60px);
   }
 }
 
@@ -116,6 +144,18 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(35px, -50px);
+    transform: translate(45px, -60px);
   }
+}
+
+.dropdown{
+  display: none;
+  position: absolute;
+  bottom: 50px;
+}
+.dp-trigger{
+  position: relative;
+}
+.dp-trigger:hover .dropdown{
+  display: block;
 }
