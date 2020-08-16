@@ -195,10 +195,10 @@ setInterval(function () {
   }
 }, 10000);
 
-document.getElementById('toggly').addEventListener("click", function(){
-  if(document.getElementById('toggly').checked){
+document.getElementById("toggly").addEventListener("click", function () {
+  if (document.getElementById("toggly").checked) {
     document.getElementById("poses").style.display = "block";
-  } else{
+  } else {
     document.getElementById("poses").style.display = "none";
   }
 });
