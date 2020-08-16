@@ -68,7 +68,8 @@ let currentVideo = null;
 let video = document.getElementById("stage-video");
 let config = document.getElementById("config-btn");
 let swatches = document.getElementsByClassName("swatch");
-console.log(swatches);
+let poses = document.getElementsByClassName("pose");
+
 playAudioBtn.addEventListener("click", function () {
   if (playAudioBtn.classList.contains("muted")) {
     playAudioBtn.classList.remove("muted");
@@ -179,3 +180,15 @@ var openFile = function (file) {
   };
   reader.readAsDataURL(input.files[0]);
 };
+
+let intervalIndex = 0;
+setInterval(function () {
+  Array.prototype.forEach.call(poses, function (el) {
+    el.classList.remove("current");
+  });
+  poses[intervalIndex].classList.add("current");
+  intervalIndex++;
+  if (intervalIndex >= poses.length) {
+    intervalIndex = 0;
+  }
+}, 10000);
