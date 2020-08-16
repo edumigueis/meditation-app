@@ -61,6 +61,18 @@ let themes = [
     first: "#eb59f0",
     sec: "#c059f0",
   },
+  {
+    first: "#e6b737",
+    sec: "#e7d425",
+  },
+  {
+    first: "#e68637",
+    sec: "#e67737",
+  },
+  {
+    first: "#3d6bcf",
+    sec: "#4983b9",
+  },
 ];
 let randomIndex = 0;
 let current = new Audio("");
