@@ -69,6 +69,7 @@ let video = document.getElementById("stage-video");
 let config = document.getElementById("config-btn");
 let swatches = document.getElementsByClassName("swatch");
 let poses = document.getElementsByClassName("pose");
+document.getElementById("poses").style.display = "none";
 
 playAudioBtn.addEventListener("click", function () {
   if (playAudioBtn.classList.contains("muted")) {
@@ -182,6 +183,7 @@ var openFile = function (file) {
 };
 
 let intervalIndex = 0;
+
 setInterval(function () {
   Array.prototype.forEach.call(poses, function (el) {
     el.classList.remove("current");
@@ -192,3 +194,11 @@ setInterval(function () {
     intervalIndex = 0;
   }
 }, 10000);
+
+document.getElementById('toggly').addEventListener("click", function(){
+  if(document.getElementById('toggly').checked){
+    document.getElementById("poses").style.display = "block";
+  } else{
+    document.getElementById("poses").style.display = "none";
+  }
+});

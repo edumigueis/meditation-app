@@ -327,6 +327,7 @@ ul li button {
   transform: translateX(0);
   opacity: 1 !important;
 }
+
 label {
   display: block;
   width: 54px;
@@ -383,4 +384,13 @@ input:checked+label:active>i {
 
 input:checked+label {
   background-color: #008FFF;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-wrapper{
+  margin-left: auto;
+  margin-right: 10px;
 }
