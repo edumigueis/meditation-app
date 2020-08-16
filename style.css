@@ -58,6 +58,10 @@ body {
 .bottom-bar button i {
   font-size: 20px;
 }
+a i{
+  font-size: 20px;
+  color: black;
+}
 
 .audio-btn {
   cursor: pointer;
