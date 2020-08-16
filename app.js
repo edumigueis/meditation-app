@@ -35,6 +35,14 @@ let pairings = [
     audio: "./sounds/moon.mp3",
     video: "./video/moon.mp4",
   },
+  {
+    audio: "./sounds/nature.mp3",
+    video: "./video/nature.mp4",
+  },
+  {
+    audio: "./sounds/goodmorning.mp3",
+    video: "./video/goodmorning.mp4",
+  },
 ];
 let themes = [
   {
