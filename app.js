@@ -157,6 +157,7 @@ document.getElementById("toggle-video").addEventListener("click", function () {
 });
 
 current.addEventListener("ended", function () {
+  current.currentTime = 0;
   current.load();
   current.play();
 });
@@ -176,7 +177,6 @@ for (let i = 0; i < swatches.length; i++) {
   swatches[i].addEventListener("click", function (event) {
     Array.prototype.forEach.call(swatches, function (el) {
       el.classList.remove("active");
-      console.log(el.tagName);
     });
     let theme = event.target.getAttribute("data-theme");
     var f = themes[parseInt(theme)].first;
