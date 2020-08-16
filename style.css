@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 body {
   overflow: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
 .wrapper {
@@ -226,6 +227,36 @@ ul li button{
   backdrop-filter: blur(5px);
   transition: 0.3s all ease-out;
 }
+.modal-wrapper .modal{
+  position: absolute;
+  top: 100px;
+  left: calc((100% - 550px)/2);
+  height: 300px;
+  width: 550px;
+  background: #fefefe;
+  transition: 0.3s all ease-out;
+  border-radius: 14px;
+}
+.modal .part{
+  width: 90%;
+  padding: 10px 0;
+  margin: 10px 5%;
+  border-bottom: 1px solid lightgray;
+}
 .modal-wrapper.open{
   display: block !important;
+}
+.swatches{
+  display: flex;
+  margin-top: 5px;
+}
+.swatches .swatch{
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.swatch.active{
+  border: 2px solid #999999;
 }

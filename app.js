@@ -27,12 +27,39 @@ let pairings = [
     video: "./video/moon.mp4",
   },
 ];
+let themes = [
+  {
+    first: "#70dfbd",
+    sec: "#53b7bd",
+  },
+  {
+    first: "#64c4b4",
+    sec: "#3eb7db",
+  },
+  {
+    first: "#a2df70",
+    sec: "#afeb41",
+  },
+  {
+    first: "#70addf",
+    sec: "#457890",
+  },
+  {
+    first: "#bd31f5",
+    sec: "#2b9af5",
+  },
+  {
+    first: "#eb59f0",
+    sec: "#c059f0",
+  },
+];
 let randomIndex = 0;
 let current = new Audio("");
 let currentVideo = null;
 let video = document.getElementById("stage-video");
 let config = document.getElementById("config-btn");
-
+let swatches = document.getElementsByClassName("swatch");
+console.log(swatches);
 playAudioBtn.addEventListener("click", function () {
   if (playAudioBtn.classList.contains("muted")) {
     playAudioBtn.classList.remove("muted");
@@ -95,10 +122,33 @@ current.addEventListener("ended", function () {
   current.play();
 });
 
-config.addEventListener("click", function(){
+config.addEventListener("click", function () {
   document.getElementById("config-md").classList.toggle("open");
-})
+});
 
-document.getElementById("config-md").addEventListener("click", function(){
-  document.getElementById("config-md").classList.toggle("open");
-})
+document.getElementById("config-md").addEventListener("click", function (eve) {
+  if (eve.target.classList.contains("modal-wrapper")) {
+    document.getElementById("config-md").classList.toggle("open");
+  } else {
+    return;
+  }
+});
+for (let i = 0; i < swatches.length; i++) {
+  swatches[i].addEventListener("click", function (event) {
+    Array.prototype.forEach.call(swatches, function (el) {
+      el.classList.remove("active");
+      console.log(el.tagName);
+    });
+    let theme = event.target.getAttribute("data-theme");
+    var f = themes[parseInt(theme)].first;
+    var s = themes[parseInt(theme)].sec;
+    let circles = document.getElementsByClassName("circle");
+    for (let index = 0; index < circles.length; index += 2) {
+      circles[index].style.background = f;
+    }
+    for (let indexs = 1; indexs < circles.length; indexs += 2) {
+      circles[indexs].style.background = s;
+    }
+    event.target.classList.add("active");
+  });
+}
