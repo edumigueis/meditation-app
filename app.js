@@ -1,3 +1,12 @@
+/*!
+ * app.js (https://github.com/edumigueis/meditation-app)
+ * Version: 1.0.0
+ * Author: Eduardo Migueis @edumigueis
+ * Author URL:
+ * Github: https://github.com/edumigueis/meditation-app
+ * app.js Copyright (c) Eduardo Migueis 2020.
+ */
+
 const playAudioBtn = document.querySelector("#switch-audio");
 const randomize = document.querySelector("#random-audio");
 let audio = new Audio("./sounds/beach.mp3");
@@ -152,3 +161,21 @@ for (let i = 0; i < swatches.length; i++) {
     event.target.classList.add("active");
   });
 }
+
+document.getElementById("OpenImgUpload").addEventListener("click", function () {
+  document.getElementById("imgupload").click();
+});
+
+var openFile = function (file) {
+  var input = file.target;
+
+  var reader = new FileReader();
+  reader.onload = function () {
+    var dataURL = reader.result;
+    var output = document.getElementById("OpenImgUpload");
+    var mainOutput = document.getElementById("mainBg");
+    output.src = dataURL;
+    mainOutput.src = dataURL;
+  };
+  reader.readAsDataURL(input.files[0]);
+};

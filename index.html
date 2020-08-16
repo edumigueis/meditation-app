@@ -20,6 +20,7 @@
   <body>
     <div class="wrapper">
       <img
+        id="mainBg"
         class="bg"
         src="https://images.hdqwalls.com/download/sea-coast-horizon-calming-5m-3840x2160.jpg"
         alt=""
@@ -112,6 +113,22 @@
         </div>
         <div class="part">
           <p class="title">Background</p>
+          <div class="backgrounds">
+            <input
+              type="file"
+              id="imgupload"
+              style="display: none;"
+              accept="image/*"
+              onchange="openFile(event)"
+            />
+            <div class="back">
+              <img
+                src="https://images.hdqwalls.com/download/sea-coast-horizon-calming-5m-3840x2160.jpg"
+                alt=""
+                id="OpenImgUpload"
+              />
+            </div>
+          </div>
         </div>
         <div class="part">
           <p class="title">Made by Eduardo Migueis</p>

@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 body {
   overflow: hidden;
   font-family: 'Lato', sans-serif;
@@ -20,6 +22,7 @@ body {
   top: 0;
   z-index: -5;
 }
+
 .wrapper #stage-video {
   max-width: 120%;
   min-width: 100%;
@@ -51,14 +54,16 @@ body {
   outline: none;
   margin-right: 10px;
 }
-.bottom-bar button i{
+
+.bottom-bar button i {
   font-size: 20px;
 }
 
 .audio-btn {
   cursor: pointer;
 }
-.audio-btn .fa-volume-up{
+
+.audio-btn .fa-volume-up {
   display: none;
 }
 
@@ -198,25 +203,29 @@ body {
   opacity: 1 !important;
   transform: translateY(0px);
 }
-video.none{
-  display: none !important;
-}
-#toggle-video{
-  cursor: pointer;
-}
-.fas.none{
+
+video.none {
   display: none !important;
 }
 
-ul li{
+#toggle-video {
+  cursor: pointer;
+}
+
+.fas.none {
+  display: none !important;
+}
+
+ul li {
   list-style: none;
 }
-ul li button{
+
+ul li button {
   margin-bottom: 8px;
   cursor: pointer;
 }
 
-.modal-wrapper{
+.modal-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -227,36 +236,64 @@ ul li button{
   backdrop-filter: blur(5px);
   transition: 0.3s all ease-out;
 }
-.modal-wrapper .modal{
+
+.modal-wrapper .modal {
   position: absolute;
   top: 100px;
   left: calc((100% - 550px)/2);
-  height: 300px;
+  height: 350px;
   width: 550px;
   background: #fefefe;
   transition: 0.3s all ease-out;
   border-radius: 14px;
 }
-.modal .part{
+
+.modal .part {
   width: 90%;
   padding: 10px 0;
   margin: 10px 5%;
   border-bottom: 1px solid lightgray;
 }
-.modal-wrapper.open{
+
+.modal-wrapper.open {
   display: block !important;
 }
-.swatches{
+
+.swatches {
   display: flex;
   margin-top: 5px;
 }
-.swatches .swatch{
+
+.swatches .swatch {
   width: 20px;
   height: 20px;
   margin-right: 6px;
   border-radius: 50%;
   cursor: pointer;
 }
-.swatch.active{
+
+.swatch.active {
   border: 2px solid #999999;
+}
+
+.backgrounds {
+  display: flex;
+  margin: 10px 0;
+}
+
+.backgrounds .back {
+  width: 100px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.backgrounds .back img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
 }
