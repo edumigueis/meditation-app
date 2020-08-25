@@ -17,32 +17,11 @@
 ### Clone
 
 - Clone this repo to your local machine using `https://github.com/edumigueis/meditation-app.git`
-
-## Contributing
-
-> To get started you have to fork and clone the repository. Then, you can create pull requests.
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/edumigueis/Electron-Password-Safety.git`
-
-### Step 2
-
-- **Go coding yey!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/edumigueis/Electron-Password-Safety/compare" target="_blank">`https://github.com/edumigueis/Electron-Password-Safety/compare`</a>.
-
 ---
 
 ## License
 
 [![License](https://img.shields.io/badge/license-Apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0)
 
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- **[Apache-2.0 LICENSE](https://www.apache.org/licenses/LICENSE-2.0)**
 - Copyright 2020 © Eduardo Migueis.
