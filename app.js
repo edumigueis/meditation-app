@@ -2,7 +2,6 @@
  * app.js (https://github.com/edumigueis/meditation-app)
  * Version: 1.0.0
  * Author: Eduardo Migueis @edumigueis
- * Author URL:
  * Github: https://github.com/edumigueis/meditation-app
  * app.js Copyright (c) Eduardo Migueis 2020.
  */
