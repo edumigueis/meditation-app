@@ -1,5 +1,6 @@
 # meditation-app
 
+- [Live Demo](https://edumigueis.github.io/meditation-app/)
 >  An amazing website made for meditating and relaxation. It was developed with javascript and scss. It presents settings and variable content. Photos and videos provided by Pexels, and audios provided by Free Audio Library.
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![License](https://img.shields.io/badge/license-Apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0)
